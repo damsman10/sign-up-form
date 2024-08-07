@@ -1,0 +1,261 @@
+/* @font-face {
+    src: url(./assets/Poppins-Black.ttf);
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+} */
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    /* font-weight: 100; */
+    /* font-style: normal; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(./assets/bg-intro-desktop.png);
+}
+
+.container {
+    margin: auto;
+    /* height: 100vh; */
+    margin-top: 10%;
+    max-width: 1440px;
+}
+
+.container-flex {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.left-container {
+    width: 45%;
+    margin-right: 6rem;
+}
+.left-container p {
+    color: white;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+.left-container h1 {
+    font-size: 2.5rem;
+    color: white;
+    font-family: "Poppins";
+}
+
+.right-container {
+    width: 45%;
+}
+
+.right-top {
+    background-color: hsl(248, 32%, 49%) ;
+    border: 0.5px solid hsl(248, 32%, 49%);
+    margin-bottom: 15px;
+    height: 70px;
+    border-radius: 10px;
+    box-shadow: 0 8px rgb(247, 102, 102) ;
+    
+
+
+    /* box-shadow: ; */
+}
+
+.right-top p {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    
+}
+
+
+
+.right-bottom {
+    /* height: 30rem; */
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+    box-shadow: 0 8px rgb(240, 102, 102) ;
+}
+
+input {
+    display: block;
+    padding: 15px;
+    height: 3.5rem;
+    width: 80%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-color: #f1eeee;
+    border-style: solid;
+}
+
+input::placeholder {
+    padding-left: 10px;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+}
+input:focus {
+    border: 1px solid black;
+    padding-left: 25px;
+    
+    
+}
+
+.right-bottom button {
+    width: 80%;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 22px;
+    font-size: 16px;
+    color: #fff;
+    background-color: hsl(154, 59%, 51%);
+    box-shadow: 0 3px rgb(37, 187, 122);
+}
+
+.right-bottom p {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    color: hsl(246, 25%, 77%);
+    padding: 0 10px;
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 894px) {
+
+    .container-flex {
+        width: 90%;
+
+    }
+
+    .right-container {
+        width: 50%;
+    }
+
+    .left-container {
+        margin-left: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 530px) {
+    .container-flex {
+        flex-direction: column;
+        align-items: none;
+        margin-bottom: 3rem;
+    }
+
+    .left-container {
+        width: 90%;
+        margin-right: 0;
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+    
+    .right-container {
+        width: 90%;
+        margin-top: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .container {
+        margin-top: 18%;
+    }
+    
+    .container-flex {
+        flex-direction: column;
+        align-items: none;
+        width: 90%;
+        margin-bottom: 0;
+    }
+
+    .left-container {
+        width: 100%;
+        margin-right: 0;
+        margin-left: -2px;
+    }
+
+    .left-container h1 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .left-container p {
+        text-align: center;
+        font-size: 14px;
+        padding: 0 30px;
+        line-height: 25px;
+    }
+
+    input {
+        margin-bottom: 15px;
+    }
+
+    .right-container {
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    .right-top {
+        padding: 0 70px;
+    }
+
+    .right-top p {
+        text-align: center;
+        line-height: 20px;
+        font-size: 12px;
+        margin-top: 15px;
+        padding: 0 20px;
+        
+    }
+
+    .right-bottom {
+        padding-bottom: 10px;
+    }
+
+    .right-bottom button {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .right-bottom p {
+        text-align: center;
+        padding: 0 3.5rem;
+        line-height: 20px;
+        font-size: 10px;
+    }
+
+
+    input:focus {
+        border: 1px solid black;
+        
+        
+    }
+
+}
